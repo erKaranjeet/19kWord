@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">19K Dictionary</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="search_views_content">SearchView allows you provide a unified mechanism of searching with optional featurs such as auto-completion and an always-expanded mode.</string>
+    <string name="reset_setting_preference_dialog"></string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="auto_suggestion_summary_pref">\nپس از نوشتن حداقل این تعداد کاراکتر پیشنهادات به شما نشان داده خواهند شد.
+            درصورتی که کند بودن جستجو این عدد را به 3 یا 4 تغییر دهید</string>
+    <string name="auto_suggestion_title_pref">حداقل کاراکتر برای شروع خودکار پیشنهادات</string>
+    <string name="link_words_summary_on">باغیر فعال کردن این قابلیت کلمات غیر قابل کلیک(لمس)کردن خواهند شد</string>
+    <string name="link_words_summary_off">با فعال کردن این قابلیت میتوانید تنها با لمس هر کلمه معانی آن را مشاهده کنید</string>
+    <string name="link_words_summary_title">پیوند کردن کلمات</string>
+
+</resources>

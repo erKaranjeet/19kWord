@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="تنظیمات نمایش  لیست ها و پیشنهادات" >
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            android:defaultValue="@color/default_text_color"
+            android:key="TEXTCOLOR"
+            android:summary="لیست ها و پیشنهادات با این رنگ نمایش داده خواهد شد"
+            android:title="رنگ متن" />
+
+        <bane.innovation.a19kworddictionary.preference.FontPreference
+            android:defaultValue="Far_Nazanin.ttf"
+            android:key="TEXTFONT"
+            android:summary="فونت نمایش لیست ها و پیشنهادات"
+            android:title="فونت" >
+        </bane.innovation.a19kworddictionary.preference.FontPreference>
+
+        <ListPreference
+            android:key="TEXTSIZE"
+            android:summary="سایز نمایش لیست ها و پیشنهادات"
+            android:title="سایز" >
+        </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="تنظیمات نمایش تعریف کلمات" >
+        <net.margaritov.preference.colorpicker.ColorPickerPreference
+            alphaSlider="true"
+            android:defaultValue="@color/default_detail_text_color"
+            android:key="DETAILTEXTCOLOR"
+            android:summary="تعریف کلمات با این رنگ نمایش داده خواهد شد"
+            android:title="رنگ متن" />
+
+        <bane.innovation.a19kworddictionary.preference.FontPreference
+            android:defaultValue="B Mitra.ttf"
+            android:key="DETAILTEXTFONT"
+            android:summary="فونت نمایش تعریف کلمات"
+            android:title="فونت" >
+        </bane.innovation.a19kworddictionary.preference.FontPreference>
+
+        <ListPreference
+            android:key="DETAILTEXTSIZE"
+            android:summary="سایز نمایش تعریف کلمات"
+            android:title="سایز" >
+        </ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="بازگردانی تنظیمات اولیه" >
+        <bane.innovation.a19kworddictionary.preference.ResetPreference
+            android:key="RESTORE"
+            android:summary="تنظیمات پیشفرض اعمال و نرم افزار با سرور همگام میشود"
+            android:title="بازگردانی تنظیمات اولیه" >
+        </bane.innovation.a19kworddictionary.preference.ResetPreference>
+        <bane.innovation.a19kworddictionary.preference.ClearHistory
+            android:key="HISTORY"
+            android:summary="تمام سوابق جستجو حذف خواهد شد"
+            android:title="حذف سابقه جستجو" >
+        </bane.innovation.a19kworddictionary.preference.ClearHistory>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="سایر تنظیمات" >
+        <CheckBoxPreference
+            android:defaultValue="true"
+            android:key="LINKWORDS"
+            android:persistent="true"
+            android:summaryOff="@string/link_words_summary_off"
+            android:summaryOn="@string/link_words_summary_on"
+            android:title="@string/link_words_summary_title" />
+		
+        
+        <EditTextPreference
+            android:defaultValue="2"
+            android:key="AUTOSUGGESTIONMINLENGTH"
+            android:persistent="true"
+            android:summary="@string/auto_suggestion_summary_pref"
+            android:title="@string/auto_suggestion_title_pref" />
+    </PreferenceCategory>
+
+</PreferenceScreen>
